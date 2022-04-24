@@ -35,7 +35,6 @@ body{
     height: 100%;
     background-color: rgba(255, 255, 255, 0.4);
     position: absolute;
-
 }
 
 @media (min-width: 320px) {
@@ -54,6 +53,14 @@ body{
 .logo{
     padding: 10px;
     z-index: 1;
+    animation-name: movlog;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+@keyframes movlog {
+    0%{
+        transform: translate(25px,0px);
+    }
 }
 
 .navbar{
@@ -212,6 +219,10 @@ body{
     text-align: center;
 }
 
+.texto-productos img{
+    transition: 3s;
+}
+
 @media (min-width: 320px) {
     .texto-productos img{
       width: 100%;
@@ -223,6 +234,7 @@ body{
         width: 90%;
     }
 }
+
 
 .btn{
     width: 100px;
@@ -327,6 +339,7 @@ body{
     text-align: center;
 }
 
+
 /*NOSOTROS*/
 
 .campo-nosotros-secundario{
@@ -337,7 +350,7 @@ body{
 
 .contenido-primario-nosotros .encabezado-home{
     grid-area: header;
-    background-image: none;
+    background-image: linear-gradient(white,transparent);
 }
 
 .titulo-nosotros{
