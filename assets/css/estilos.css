@@ -69,6 +69,13 @@ body{
     z-index: 1;
 }
 
+.encabezado-home .navbar{
+    background-color: transparent !important;
+
+}
+
+
+
 .navbar ul{
     list-style-type: none;
     text-align: right;
@@ -214,6 +221,11 @@ body{
     }
 }
 
+.contenido-productos{
+    display: flex;
+    justify-content: center;
+    margin-top: 110px;
+}
 
 .texto-productos{
     text-align: center;
@@ -254,26 +266,26 @@ body{
 
 @media (min-width: 320px) {
     .locales{
-      margin-top: 550px;
+      margin-top: 31px;
     }
 }
 
 @media (min-width: 480px) {
     .locales{
-      margin-top: 783px;
+      margin-top: 143px;
     }
 }
 
 @media (min-width: 600px) {
     .locales{
-      margin-top: 1138px;
+      margin-top: 228px;
     }
 }
 
 @media (min-width: 768px) {
     .locales{
       display: flex;
-      margin-top: 23px;
+      margin-top: 103px;
       justify-content: center;
     }
 }
@@ -388,4 +400,22 @@ body{
     text-align: center;
     margin-bottom: 20px;
 }
+
+/*CONTACTO*/
+
+
+.contenido-primario-contacto .encabezado-home{
+    background-image: linear-gradient(white,transparent);
+}
+
+
+.form__fp--casillas{
+    margin: 20px;
+}
+
+.form__fp--casillas div{
+    margin: 10px;
+}
+
+
 
