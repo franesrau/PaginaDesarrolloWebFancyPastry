@@ -1,4 +1,6 @@
 @import "_variables";
+@import"_mixins";
+@import"_botones";
 
 
 
@@ -60,9 +62,7 @@ body{
                     }
                 }
             
-            .texto-home p{
-                color: $colorPrimario;
-            }    
+
             .navbar{
                 margin-left: auto;
                 padding:10px;
@@ -108,9 +108,8 @@ body{
         padding: 10px;
         top: 200px;
     }     
-        .h1{
-            font-size: 30px;
-        }
+        
+        
         @media (min-width: 320px) {
             .texto-home h1{
                 font-size: 15px;
@@ -125,49 +124,80 @@ body{
         @media (min-width: 1024px) {
             .texto-home h1{
                 font-size: 25px;
+                
+            }
+
+        }
+    .contenido-nosotros{
+
+        .info-nosotros{
+            h2{
+                color: $colorPrimario;
+                font-size: 3vw;
+                white-space: nowrap;
+            }
+            h3{
+                color:$colorSecundario;
+                font-size: 15px;
             }
         }
+    }    
 
-        .texto-home 
-                    p{
-                        font-size: 20px;
-                        text-align: left;
-                        color: $colorPrimario;
-                    }
 
-    .contenido-nosotros{
+
+
+
+    .contenido-primario-nosotros{
         grid-area: aside;  
-        color: $colorPrimario;
     }
-        .info-nosotros{
-            display: flex;
-            justify-content: center;
-            text-align: center;
-        }
+
             .texto-nosotros{
                 padding:0 50px;
+                .h2{
+                    color:#B44653;
+                    font-size: 30px;
+                }
+                .h3{
+                    color:$colorSecundario;
+                    font-size: 20px;
+                }
             }
-            
+
+            .titulo-nosotros{
+                font-size: 30px;
+                color: $colorPrimario;
+                text-align: center;
+            }
+            .texto-contenido{
+                font-size: 15px;
+                color: $colorSecundario;
+                text-align: center;
+            }
+            .video-responsive {
+                display: flex;
+                justify-content: center;
+            }
+
             @media (min-width: 320px) {
-                .texto-nosotros{
+                .nosotros-texto{
                     padding:0 10px;
                 }
             }
                 @media (min-width: 600px) {
-                    .texto-nosotros h2{
-                        font-size: 20px;
+                    .nosotros-texto h2{
+                        font-size: 15px;
                     }
                 }
                 
                 @media (min-width: 320px) {
-                    .texto-nosotros p{
+                    .nosotros-texto h3{
                         font-size: 10px;
                         color: $colorSecundario;
                     }
                 }
                 
                 @media (min-width: 600px) {
-                    .texto-nosotros p{
+                    .nosotros-texto h3{
                         font-size: 15px;
                         color: $colorSecundario
                     }
@@ -176,7 +206,8 @@ body{
         grid-area: main;
         display: flex;
         justify-content: center;
-        margin-top: 110px;
+
+
     }            
     @media (min-width: 320px) {
         .contenido-productos{
@@ -201,9 +232,40 @@ body{
         .contenido-productos{
             display: flex;
             align-items: center;
-            margin-top: 50px;
+
         }
     }
+    .contenedor-productos{
+        margin: 10px;
+        .titulos-productos{
+            color: $colorPrimario;
+            font-size: 30px;
+        }
+            .nombre-torta{
+                font-size: 20px;
+                color:$colorSecundario
+            }
+            .boton{
+                background-color: map-get($boton , colorFondo );
+                color: map-get($boton , colorLetra );
+                border: map-get($boton , borde );
+                border-radius: map-get($boton , radio );
+                @include propiedadesBotones(100px ,40px ,#B44653 ,#fff,0 ,5px )
+            }
+
+
+
+            
+        
+
+
+    }
+
+
+
+
+
+
 
     .locales{
         grid-area: sec;
@@ -285,6 +347,30 @@ body{
                         font-size: 20px;
                         }
                     }
+
+    .form__fp{
+        padding: 40px;
+        .form__fp--casillas{
+            .btn{
+                background-color: $colorPrimario;
+                border: 0;
+            }
+            
+        }
+    }
+    .acordeon-preguntas{
+        .accordion{
+            .accordion-item{
+                border: white;
+                padding: 10px;
+                .accordion-button {
+                    background-color: rgb(208, 182, 186);
+                    color: white;
+                }
+                
+            }
+        }
+    }
 
     .pie-pagina{
         grid-area: footer;

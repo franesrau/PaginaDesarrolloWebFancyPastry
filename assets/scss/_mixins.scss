@@ -1,0 +1,8 @@
+@mixin propiedadesBotones($largo ,$ancho ,$colorFondo ,$colorLetra ,$borde ,$radio) {
+    width: $largo;
+    height: $ancho;
+    background-color: $colorFondo;
+    color: $colorLetra;
+    border: $borde;
+    border-radius: $radio;
+}

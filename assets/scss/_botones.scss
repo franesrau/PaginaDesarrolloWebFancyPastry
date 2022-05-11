@@ -1,0 +1,12 @@
+.boton{
+    background-color: map-get($boton , colorFondo );
+    color: map-get($boton , colorLetra );
+    border: map-get($boton , borde );
+    border-radius: map-get($boton , radio );
+
+}
+
+.boton-secundario{
+    @extend .boton;
+    @include propiedadesBotones(100px ,40px ,#B44653 ,#fff,0 ,5px )
+}
