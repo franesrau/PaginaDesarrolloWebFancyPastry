@@ -14,6 +14,7 @@
   border-radius: 5px;
 }
 
+/*HOME*/
 body {
   background-image: url(../img/Background-01.jpg);
   font-family: 'Playfair Display', serif;
@@ -153,153 +154,18 @@ ul {
   }
 }
 
-.contenido-nosotros .info-nosotros h2 {
-  color: #B44653;
-  font-size: 3vw;
-  white-space: nowrap;
-}
-
-.contenido-nosotros .info-nosotros h3 {
-  color: #6D6D6D;
-  font-size: 15px;
-}
-
-.contenido-primario-nosotros {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: aside;
-}
-
-.texto-nosotros {
-  padding: 0 50px;
-}
-
-.texto-nosotros .h2 {
-  color: #B44653;
-  font-size: 30px;
-}
-
-.texto-nosotros .h3 {
-  color: #6D6D6D;
-  font-size: 20px;
-}
-
-.titulo-nosotros {
+.contenido-pasteleria .contenido-pasteleria-info .titulo-bienvenidos {
   font-size: 30px;
   color: #B44653;
   text-align: center;
+  padding: 10px 20px;
 }
 
-.texto-contenido {
+.contenido-pasteleria .contenido-pasteleria-info .subtitulo-bienvenidos {
   font-size: 15px;
   color: #6D6D6D;
   text-align: center;
-}
-
-.video-responsive {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-@media (min-width: 320px) {
-  .nosotros-texto {
-    padding: 0 10px;
-  }
-}
-
-@media (min-width: 600px) {
-  .nosotros-texto h2 {
-    font-size: 15px;
-  }
-}
-
-@media (min-width: 320px) {
-  .nosotros-texto h3 {
-    font-size: 10px;
-    color: #6D6D6D;
-  }
-}
-
-@media (min-width: 600px) {
-  .nosotros-texto h3 {
-    font-size: 15px;
-    color: #6D6D6D;
-  }
-}
-
-.contenido-productos {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: main;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-@media (min-width: 320px) {
-  .contenido-productos {
-    display: inherit;
-    margin-top: 80px;
-  }
-}
-
-@media (min-width: 480px) {
-  .contenido-productos {
-    margin-top: 10px;
-  }
-}
-
-@media (min-width: 600px) {
-  .contenido-productos {
-    margin-top: 112px;
-  }
-}
-
-@media (min-width: 768px) {
-  .contenido-productos {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-.contenedor-productos {
-  margin: 10px;
-}
-
-.contenedor-productos .titulos-productos {
-  color: #B44653;
-  font-size: 30px;
-}
-
-.contenedor-productos .nombre-torta {
-  font-size: 20px;
-  color: #6D6D6D;
-}
-
-.contenedor-productos .boton, .contenedor-productos .boton-secundario {
-  background-color: #B44653;
-  color: #fff;
-  border: 0;
-  border-radius: 5px;
-  width: 100px;
-  height: 40px;
-  background-color: #B44653;
-  color: #fff;
-  border: 0;
-  border-radius: 5px;
+  padding: 10px 20px;
 }
 
 .locales {
@@ -391,25 +257,6 @@ ul {
   }
 }
 
-.form__fp {
-  padding: 40px;
-}
-
-.form__fp .form__fp--casillas .btn {
-  background-color: #B44653;
-  border: 0;
-}
-
-.acordeon-preguntas .accordion .accordion-item {
-  border: white;
-  padding: 10px;
-}
-
-.acordeon-preguntas .accordion .accordion-item .accordion-button {
-  background-color: #d0b6ba;
-  color: white;
-}
-
 .pie-pagina {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
@@ -420,5 +267,146 @@ ul {
 
 .pie-pagina p {
   text-align: center;
+  color: #6D6D6D;
+}
+
+/*NOSOTROS*/
+.campo-nosotros-secundario .titulo-nosotros {
+  font-size: 30px;
+  color: #B44653;
+  text-align: center;
+}
+
+.campo-nosotros-secundario .texto-contenido {
+  font-size: 15px;
+  color: #6D6D6D;
+  text-align: center;
+}
+
+.campo-nosotros-secundario .video-responsive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 320px) {
+  .campo-nosotros-secundario .nosotros-texto {
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 600px) {
+  .campo-nosotros-secundario .nosotros-texto h2 {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 320px) {
+  .campo-nosotros-secundario .nosotros-texto h3 {
+    font-size: 10px;
+    color: #6D6D6D;
+  }
+}
+
+@media (min-width: 600px) {
+  .campo-nosotros-secundario .nosotros-texto h3 {
+    font-size: 15px;
+    color: #6D6D6D;
+  }
+}
+
+/*PRODUCTOS*/
+.contenido-productos {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: main;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 320px) {
+  .contenido-productos {
+    display: inherit;
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 480px) {
+  .contenido-productos {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 600px) {
+  .contenido-productos {
+    margin-top: 112px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contenido-productos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.contenedor-productos {
+  margin: 10px;
+}
+
+.contenedor-productos .titulos-productos {
+  color: #B44653;
+  font-size: 30px;
+}
+
+.contenedor-productos .nombre-torta {
+  font-size: 20px;
+  color: #6D6D6D;
+}
+
+.contenedor-productos .boton, .contenedor-productos .boton-secundario {
+  background-color: #B44653;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  background-color: #B44653;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+}
+
+/*CONTACTO*/
+.form__fp {
+  padding: 40px;
+}
+
+.form__fp .form__fp--casillas .btn {
+  background-color: #B44653;
+  border: 0;
+}
+
+/*TERMINOS Y CONDICIONES*/
+.acordeon-preguntas .accordion .accordion-item {
+  border: white;
+  padding: 10px;
+}
+
+.acordeon-preguntas .accordion .accordion-item .accordion-button {
+  background-color: #dfaeb4;
+  color: white;
 }
 /*# sourceMappingURL=estilos.css.map */
