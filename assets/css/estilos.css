@@ -15,9 +15,22 @@
 }
 
 /*HOME*/
+html {
+  height: 100%;
+}
+
 body {
   background-image: url(../img/Background-01.jpg);
   font-family: 'Playfair Display', serif;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
 }
 
 .contenedor-general {
@@ -39,6 +52,8 @@ body {
   background-image: url(../img/vitrina-home.jpg);
   background-size: cover;
   position: relative;
+  width: 100%;
+  background-position: top;
 }
 
 .encabezado-home::before {
@@ -47,13 +62,6 @@ body {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.4);
   position: absolute;
-}
-
-@media (min-width: 320px) {
-  .encabezado-home {
-    width: 100%;
-    background-position: top;
-  }
 }
 
 .contenido-home {
@@ -94,9 +102,6 @@ body {
   margin-left: auto;
   padding: 10px;
   z-index: 1;
-}
-
-.navbar {
   background-color: transparent !important;
 }
 
@@ -136,10 +141,14 @@ ul {
   top: 200px;
 }
 
-@media (min-width: 320px) {
-  .texto-home h1 {
-    font-size: 15px;
+@media (min-width: 991px) {
+  .texto-home {
+    left: 10px;
   }
+}
+
+.texto-home h1 {
+  font-size: 20px;
 }
 
 @media (min-width: 480px) {
@@ -168,28 +177,53 @@ ul {
   padding: 10px 20px;
 }
 
+.contenido-pasteleria .contenido-pasteleria-info img {
+  margin-left: 16px;
+}
+
+@media (min-width: 768px) {
+  .contenido-pasteleria-info {
+    margin-left: 64px;
+  }
+}
+
+@media (min-width: 991px) {
+  .contenido-pasteleria-info {
+    margin-left: 185px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contenido-pasteleria-info {
+    margin-left: 5px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contenido-pasteleria {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .locales {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: sec;
-}
-
-@media (min-width: 320px) {
-  .locales {
-    margin-top: 31px;
-  }
+  margin-top: 1270px;
 }
 
 @media (min-width: 480px) {
   .locales {
-    margin-top: 143px;
+    margin-top: 1253px;
   }
 }
 
 @media (min-width: 600px) {
   .locales {
-    margin-top: 228px;
+    margin-top: 1248px;
   }
 }
 
@@ -198,10 +232,16 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 103px;
+    margin-top: 1245px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .locales {
+    margin-top: 110px;
   }
 }
 
@@ -221,15 +261,9 @@ ul {
 }
 
 .local p {
-  line-height: 50px;
   color: #6D6D6D;
-}
-
-@media (min-width: 320px) {
-  .local p {
-    font-size: 10px;
-    line-height: 20px;
-  }
+  font-size: 18px;
+  line-height: 20px;
 }
 
 @media (min-width: 600px) {
@@ -262,7 +296,7 @@ ul {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: footer;
-  margin-top: 10px;
+  margin-top: auto;
 }
 
 .pie-pagina p {
@@ -277,13 +311,15 @@ ul {
   text-align: center;
 }
 
-.campo-nosotros-secundario .texto-contenido {
+.texto-contenido {
   font-size: 15px;
+  line-height: 25px;
   color: #6D6D6D;
   text-align: center;
+  padding: 0 15px;
 }
 
-.campo-nosotros-secundario .video-responsive {
+.video-responsive {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -292,91 +328,103 @@ ul {
           justify-content: center;
 }
 
-@media (min-width: 320px) {
-  .campo-nosotros-secundario .nosotros-texto {
-    padding: 0 10px;
-  }
-}
-
 @media (min-width: 600px) {
-  .campo-nosotros-secundario .nosotros-texto h2 {
+  .nosotros-texto .nosotros-texto h2 {
     font-size: 15px;
   }
 }
 
 @media (min-width: 320px) {
-  .campo-nosotros-secundario .nosotros-texto h3 {
-    font-size: 10px;
+  .nosotros-texto .nosotros-texto h3 {
+    font-size: 15px;
+    line-height: 30px;
+    padding: 0 100px;
     color: #6D6D6D;
   }
 }
 
 @media (min-width: 600px) {
-  .campo-nosotros-secundario .nosotros-texto h3 {
+  .nosotros-texto .nosotros-texto h3 {
     font-size: 15px;
     color: #6D6D6D;
   }
 }
 
 /*PRODUCTOS*/
-.contenido-productos {
+.contenedor-productos {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: main;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-@media (min-width: 320px) {
-  .contenido-productos {
-    display: inherit;
-    margin-top: 80px;
+.titulos-productos {
+  color: #B44653;
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+@media (min-width: 768px) {
+  .titulos-productos h2 {
+    margin-left: 20px;
   }
 }
 
+.contenido-productos-detalle {
+  margin-bottom: 30px;
+}
+
+.contenido-productos-detalle .nombre-torta {
+  color: #6D6D6D;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
 @media (min-width: 480px) {
-  .contenido-productos {
-    margin-top: 10px;
+  .contenido-productos-detalle {
+    margin-left: 50px;
   }
 }
 
 @media (min-width: 600px) {
-  .contenido-productos {
-    margin-top: 112px;
+  .contenido-productos-detalle {
+    margin-left: 110px;
   }
 }
 
 @media (min-width: 768px) {
-  .contenido-productos {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .contenido-productos-detalle {
+    margin-right: 120px;
   }
 }
 
-.contenedor-productos {
-  margin: 10px;
+@media (min-width: 768px) {
+  .contenido-productos-detalle img {
+    width: 100%;
+  }
 }
 
-.contenedor-productos .titulos-productos {
-  color: #B44653;
-  font-size: 30px;
+@media (min-width: 768px) {
+  .contenido-tortas, .contenido-kuchenes, .contenido-coctel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
-.contenedor-productos .nombre-torta {
-  font-size: 20px;
-  color: #6D6D6D;
+@media (min-width: 768px) {
+  .contenido-productos-detalle img {
+    width: 200%;
+  }
 }
 
-.contenedor-productos .boton, .contenedor-productos .boton-secundario {
+@media (min-width: 1200px) {
+  .contenido-productos-detalle img {
+    width: 150%;
+  }
+}
+
+.boton, .boton-secundario {
   background-color: #B44653;
   color: #fff;
   border: 0;
